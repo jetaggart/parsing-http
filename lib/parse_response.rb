@@ -30,6 +30,18 @@ class HTTPResponseParser
     end
   end
 
+  def content_type
+    header["Content-Type"]
+  end
+
+  def server
+    header["Server"]
+  end
+
+  def location
+    header["Location"]
+  end
+
   private
 
   attr_reader :http_response

@@ -31,12 +31,10 @@ describe 'HTTPResponseParser' do
     end
 
     it 'should return Content-type: text' do
-      skip
       expect(parse_response('lib/response_200.txt').content_type).to eq("text/html")
     end
 
     it 'should return server' do
-      skip
       expect(parse_response('lib/response_200.txt').server).to eq("nginx/1.4.6 (Ubuntu)")
     end
 
@@ -48,12 +46,10 @@ describe 'HTTPResponseParser' do
     end
 
     it 'should return location' do
-      skip
       expect(parse_response('lib/response_301.txt').location).to eq("http://www.pivotaltracker.com/")
     end
 
     it 'should return server' do
-      skip
       expect(parse_response('lib/response_301.txt').server).to eq("nginx/1.6.0")
     end
 
